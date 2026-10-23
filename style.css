@@ -144,7 +144,9 @@ a {
 .container {
     width: min(calc(100% - 100px), var(--container));
     margin-inline: auto;
+
 }
+
 
 
 /* =========================================
@@ -654,14 +656,24 @@ a {
    WHY CHOOSE US
 ========================================= */
 
+.social-card {
+    padding: 15px 20px;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
 .why-section {
-    padding: 20px 0;
+    padding: 40px 0;
     background: var(--cream-2);
+    grid-template-columns: repeat(4, 2fr);
 }
 
 .why-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 2fr);
     gap: 18px;
 }
 
